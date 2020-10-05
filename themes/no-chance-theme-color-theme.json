@@ -2,10 +2,10 @@
 	"name": "No Chance Theme",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#373738",
-		"editor.foreground": "#373738",
-		"activityBar.background": "#5353d8",
-		"activityBar.foreground": "#5353d8",
+		"editor.background": "#323233",
+		"editor.foreground": "#323233",
+		"activityBar.background": "#323233",
+		"activityBar.foreground": "#3c91c2",
 		"activityBarBadge.background": "#196292",
 		"sideBarTitle.foreground": "#bbbbbb"
 	},
