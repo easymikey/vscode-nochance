@@ -17,9 +17,9 @@
     "statusBar.background": "#00a4c8",
     "window.activeBorder": "#00a4c8",
     "editorGroup.dropBackground": "#00a4c8",
-    "editorGroupHeader.tabsBackground": "#00a4c8",
-    "editorGroup.border": "#bbbbbb",
-    "editorGroupHeader.tabsBorder": "#bbbbbb",
+    "sideBarSectionHeader.border": "#00a4c8",
+    "editorGroup.border": "#00a4c8",
+    "editorGroupHeader.tabsBorder": "#bbbbbb"
   },
   "workbench.colorCustomizations": {
     "foreground": "#000000",
@@ -87,7 +87,7 @@
       "name": "Keyword, Storage",
       "scope": ["keyword", "storage.type", "storage.modifier"],
       "settings": {
-        "foreground": "#00a4c8"
+        "foreground": ""
       }
     },
     {
@@ -107,7 +107,7 @@
         "keyword.other.substitution"
       ],
       "settings": {
-        "foreground": "#EEFFFF"
+        "foreground": "#41c4e0"
       }
     },
     {
@@ -131,7 +131,7 @@
         "keyword.other.special-method"
       ],
       "settings": {
-        "foreground": "#00a4c8"
+        "foreground": "#59d1eb"
       }
     },
     {
@@ -142,17 +142,10 @@
       }
     },
     {
-      "name": "Types",
-      "scope": ["support.type"],
-      "settings": {
-        "foreground": "#C792EA"
-      }
-    },
-    {
       "name": "Block Level Variables",
       "scope": ["meta.block variable.other"],
       "settings": {
-        "foreground": "#EEFFFF"
+        "foreground": "#7FDBCA"
       }
     },
     {
@@ -199,7 +192,7 @@
         "meta.object-binding-pattern-variable"
       ],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#EEFFFF"
       }
     },
     {
@@ -225,14 +218,17 @@
       }
     },
     {
+      "name": "Type",
+      "scope": "support.type",
+      "settings": {
+        "foreground": "#F7ECB5"
+      }
+    },
+    {
       "name": "Class, Support",
       "scope": [
         "entity.name",
-        "support.type",
         "support.class",
-        "support.orther.namespace.use.php",
-        "meta.use.php",
-        "support.other.namespace.php",
         "markup.changed.git_gutter",
         "support.type.sys-types"
       ],
