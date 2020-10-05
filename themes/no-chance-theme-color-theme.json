@@ -2,9 +2,9 @@
   "name": "No Chance Theme",
   "type": "dark",
   "colors": {
-    "editor.background": "#282929",
-    "editor.foreground": "#282929",
-    "activityBar.background": "#282929",
+    "editor.background": "#282828",
+    "editor.foreground": "#bbbbbb",
+    "activityBar.background": "#282828",
     "activityBar.foreground": "#3c91c2",
     "activityBarBadge.background": "#196292",
     "sideBarTitle.foreground": "#bbbbbb"
@@ -18,10 +18,21 @@
       }
     },
     {
-      "name": "Makefile",
+      "name": "Makefile text",
       "scope": ["source.makefile", "meta.scope.recipe.makefile"],
       "settings": {
         "foreground": "#EEFFFF"
+      }
+    },
+    {
+      "name": "Makefile Func",
+      "scope": [
+        "entity.name.function.target.makefile",
+        "meta.scope.target.makefile",
+        "source.makefile"
+      ],
+      "settings": {
+        "foreground": "#196292"
       }
     },
     {
@@ -325,7 +336,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#FFCB6B"
+        "foreground": "#3c91c2"
       }
     },
     {
