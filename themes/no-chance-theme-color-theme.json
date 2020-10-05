@@ -3,7 +3,7 @@
 	"type": "dark",
 	"colors": {
 		"editor.background": "#373738",
-		"editor.foreground": "#2c3252",
+		"editor.foreground": "#373738",
 		"activityBar.background": "#5353d8",
 		"activityBar.foreground": "#5353d8",
 		"activityBarBadge.background": "#196292",
