@@ -1,2 +1,2 @@
-make publish:
-        git push && vsce publush
+publish:
+		git push && vsce publish
