@@ -109,18 +109,14 @@
     },
     {
       "name": "Variable parameters",
-      "scope": [
-        "variable.parameter"
-      ],
+      "scope": ["variable.parameter"],
       "settings": {
         "foreground": "#EEFFFF"
       }
     },
     {
       "name": "Types",
-      "scope": [
-        "support.type"
-      ],
+      "scope": ["support.type"],
       "settings": {
         "foreground": "#89DDFF"
       }
@@ -353,7 +349,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground":"#C792EA"
+        "foreground": "#C792EA"
       }
     },
     {
