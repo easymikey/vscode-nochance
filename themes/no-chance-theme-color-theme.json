@@ -1,10 +1,12 @@
 {
-	"name": "no-chance-theme",
+	"name": "No Chance Theme",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#64080800",
-		"editor.foreground": "#247575",
-		"activityBarBadge.background": "#007acc",
+		"editor.background": "#434c81",
+		"editor.foreground": "#2c3252",
+		"activityBar.background": "#454e81",
+		"activityBar.foreground": "#353c64",
+		"activityBarBadge.background": "#196292",
 		"sideBarTitle.foreground": "#bbbbbb"
 	},
 	"tokenColors": [
@@ -15,7 +17,6 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"fontStyle": "italic",
 				"foreground": "#546E7A"
 			}
 		},
