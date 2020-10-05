@@ -2,10 +2,10 @@
   "name": "No Chance Theme",
   "type": "dark",
   "colors": {
-    "editor.background": "#282828",
+    "editor.background": "#272727",
     "editor.foreground": "#bbbbbb",
-    "activityBar.background": "#282828",
-    "activityBar.foreground": "#3c91c2",
+    "activityBar.background": "#272727",
+    "activityBar.foreground": "#00a4c8",
     "activityBarBadge.background": "#196292",
     "sideBarTitle.foreground": "#bbbbbb"
   },
@@ -60,7 +60,7 @@
       "name": "Keyword, Storage",
       "scope": ["keyword", "storage.type", "storage.modifier"],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#00a4c8"
       }
     },
     {
@@ -80,7 +80,7 @@
         "keyword.other.substitution"
       ],
       "settings": {
-        "foreground": "#89DDFF"
+        "foreground": "#00a4c8"
       }
     },
     {
@@ -108,10 +108,28 @@
       }
     },
     {
+      "name": "Variable parameters",
+      "scope": [
+        "variable.parameter"
+      ],
+      "settings": {
+        "foreground": "#EEFFFF"
+      }
+    },
+    {
+      "name": "Types",
+      "scope": [
+        "support.type"
+      ],
+      "settings": {
+        "foreground": "#89DDFF"
+      }
+    },
+    {
       "name": "Block Level Variables",
       "scope": ["meta.block variable.other"],
       "settings": {
-        "foreground": "#f07178"
+        "foreground": "#EEFFFF"
       }
     },
     {
@@ -122,19 +140,18 @@
       }
     },
     {
-      "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+      "name": "Number, Constant,Tag Attribute, Embedded",
       "scope": [
         "constant.numeric",
         "constant.language",
         "support.constant",
         "constant.character",
         "constant.escape",
-        "variable.parameter",
         "keyword.other.unit",
         "keyword.other"
       ],
       "settings": {
-        "foreground": "#F78C6C"
+        "foreground": "#1a5664"
       }
     },
     {
@@ -149,7 +166,7 @@
         "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
       ],
       "settings": {
-        "foreground": "#C3E88D"
+        "foreground": "#91DACD"
       }
     },
     {
@@ -327,7 +344,7 @@
         "source.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#91DACD"
       }
     },
     {
@@ -336,7 +353,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#3c91c2"
+        "foreground":"#C792EA"
       }
     },
     {
