@@ -1,0 +1,29 @@
+{
+    "name": "no-chance-theme",
+    "displayName": "No Chance Theme",
+    "description": "vscode theme",
+    "publisher": "easymikey",
+    "version": "0.0.1",
+    "icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#0C001F",
+        "theme": "dark"
+      },
+    "engines": {
+        "vscode": "^1.49.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "no-chance-theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/no-chance-theme-color-theme.json"
+            }
+        ]
+    }
+}
