@@ -7,11 +7,27 @@
     "activityBar.background": "#272727",
     "activityBar.foreground": "#00a4c8",
     "activityBarBadge.background": "#196292",
-    "sideBarTitle.foreground": "#bbbbbb"
+    "sideBarTitle.foreground": "#bbbbbb",
+    "button.background": "#00a4c8",
+    "button.foreground": "#EEFFFF",
+    "button.hoverBackground": "#196292",
+    "sideBar.border": "#196292",
+    "statusBar.background": "#00a4c8"
+  },
+  "workbench.colorCustomizations": {
+    "foreground": "#000000",
+    "editor.lineHighlightBackground": "#F0F05D70"
   },
   "tokenColors": [
     {
       "name": "Comment",
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "foreground": "#546E7A"
+      }
+    },
+    {
+      "name": "String Quotes",
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "foreground": "#546E7A"
@@ -37,7 +53,11 @@
     },
     {
       "name": "Variables",
-      "scope": ["variable", "string constant.other.placeholder"],
+      "scope": [
+        "variable",
+        "string constant.other.placeholder",
+        "variable.other.constant"
+      ],
       "settings": {
         "foreground": "#EEFFFF"
       }
@@ -91,7 +111,7 @@
         "markup.deleted.git_gutter"
       ],
       "settings": {
-        "foreground": "#f07178"
+        "foreground": "#00a4c8"
       }
     },
     {
@@ -118,7 +138,7 @@
       "name": "Types",
       "scope": ["support.type"],
       "settings": {
-        "foreground": "#89DDFF"
+        "foreground": "#C792EA"
       }
     },
     {
@@ -147,7 +167,7 @@
         "keyword.other"
       ],
       "settings": {
-        "foreground": "#1a5664"
+        "foreground": "#f07178"
       }
     },
     {
@@ -166,6 +186,38 @@
       }
     },
     {
+      "name": "Object Literal and Binding Patterns",
+      "scope": [
+        "meta.object-literal.key",
+        "meta.object-binding-pattern-variable"
+      ],
+      "settings": {
+        "foreground": "#C792EA"
+      }
+    },
+    {
+      "name": "String, Symbols, Inherited Class, Markup Heading",
+      "scope": [
+        "string",
+        "constant.other.symbol",
+        "constant.other.key",
+        "entity.other.inherited-class",
+        "markup.heading",
+        "markup.inserted.git_gutter",
+        "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+      ],
+      "settings": {
+        "foreground": "#91DACD"
+      }
+    },
+    {
+      "name": "Object Property",
+      "scope": ["variable.other.object.property"],
+      "settings": {
+        "foreground": "#F7ECB5"
+      }
+    },
+    {
       "name": "Class, Support",
       "scope": [
         "entity.name",
@@ -178,7 +230,7 @@
         "support.type.sys-types"
       ],
       "settings": {
-        "foreground": "#FFCB6B"
+        "foreground": "#7FDBCA"
       }
     },
     {
@@ -243,7 +295,7 @@
       "name": "Attributes",
       "scope": ["entity.other.attribute-name"],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#F7ECB5"
       }
     },
     {
@@ -358,7 +410,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#F78C6C"
+        "foreground": "#EEFFFF"
       }
     },
     {
