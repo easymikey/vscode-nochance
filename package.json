@@ -1,10 +1,14 @@
 {
-    "name": "no-chance-theme",
+    "name": "nochancetheme",
     "displayName": "No Chance Theme",
-    "description": "vscode theme that we doesn't change",
+    "description": "Vscode theme that we doesn't change by Mikhail Avdeev",
     "publisher": "easymikey",
-    "version": "0.0.10",
-    "icon": "images/icon.png",
+    "version": "0.0.11",
+    "icon": "images/nochance-icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/easymikey/vscode-nochance.git"
+      },
     "galleryBanner": {
         "color": "#0C001F",
         "theme": "dark"
@@ -20,7 +24,7 @@
     "contributes": {
         "themes": [
             {
-                "label": "no-chance-theme",
+                "label": "No Chance Theme",
                 "uiTheme": "vs-dark",
                 "path": "./themes/no-chance-theme-color-theme.json"
             }
