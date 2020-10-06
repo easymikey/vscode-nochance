@@ -1,9 +1,9 @@
 {
     "name": "nochancetheme",
     "displayName": "No Chance Theme",
-    "description": "Vscode theme that we doesn't change by Mikhail Avdeev",
+    "description": "A Vscode theme that you can't change by Mikhail Avdeev",
     "publisher": "easymikey",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icon": "images/nochance-icon.png",
     "repository": {
         "type": "git",
