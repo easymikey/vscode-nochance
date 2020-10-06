@@ -2,28 +2,70 @@
   "name": "No Chance Theme",
   "type": "dark",
   "colors": {
-    "editor.background": "#272727",
+    "editor.background": "#202020",
     "editor.foreground": "#bbbbbb",
-    "editorLineNumber.foreground": "#00a4c8",
-    "activityBar.background": "#272727",
+    "editor.findMatchBackground": "#00a4c8",
+    "editor.selectionHighlightBorder": "#3d7e6d",
+    "editor.selectionHighlightBackground": "#3d7e6d",
+    "editor.findMatchBorder": "#00a3c827",
+    "editorLineNumber.foreground": "#00a3c88a",
+    "editorGroup.dropBackground": "#00a3c827",
+    "editorGroup.border": "#00a3c827",
+    "editorGroupHeader.border": "#00a3c827",
+    "editorGroupHeader.tabsBorder": "#00a3c827",
+    "focusBorder": "#00a4c8",
+    "editorGroupHeader.tabsBackground": "#343534",
+    "editorWidget.background": "#343534",
+
+    "activityBar.background": "#202020",
     "activityBar.foreground": "#00a4c8",
-    "activityBar.border": "#00a4c8",
+    "activityBar.border": "#23788b27",
     "activityBarBadge.background": "#196292",
+
     "sideBarTitle.foreground": "#bbbbbb",
+    "sideBarSectionHeader.foreground": "#00a4c8",
+    "statusBar.debuggingBackground": "#3d7e6d",
+    "statusBar.background": "#00a4c8",
+    "sideBarSectionHeader.border": "#00a4c8",
+    "sideBar.border": "#00a3c827",
+
     "button.background": "#00a4c8",
     "button.foreground": "#EEFFFF",
     "button.hoverBackground": "#196292",
-    "sideBar.border": "#00a4c8",
-    "statusBar.background": "#00a4c8",
+
+    "list.dropBackground": "#00a4c8",
+    "list.activeSelectionBackground": "#00a3c8b0",
+    "list.focusBackground": "#00a3c8b0",
+    "list.hoverBackground": "#00a3c827",
+
+    "panel.border": "#00a3c827",
+    "panel.background": "#232323",
+    "panelTitle.activeForeground": "#EEFFFF",
+
+    "scrollbarSlider.background": "#084d8180",
+    "scrollbarSlider.activeBackground": "#00a3c827",
+
+    "gitDecoration.addedResourceForeground": "#00a3c8",
+    "gitDecoration.modifiedResourceForeground": "#00a3c8b0",
+    "gitDecoration.deletedResourceForeground": "#fc4c87dc",
+    "gitDecoration.untrackedResourceForeground": "#91DACD",
+    "gitDecoration.ignoredResourceForeground": "#e06e94",
+    "gitDecoration.conflictingResourceForeground": "#82aaff",
+
+    "tab.hoverBorder": "#00a4c8",
+    "tab.activeBackground": "#00a3c849",
+    "tab.activeBorderTop": "#00a4c8",
+    "tab.inactiveBackground": "#031e2449",
+    "tab.activeForeground": "#ffffff",
+
+    "peekViewEditor.background": "#272727",
+    "peekView.border": "#00a4c8",
+
     "window.activeBorder": "#00a4c8",
-    "editorGroup.dropBackground": "#00a4c8",
-    "sideBarSectionHeader.border": "#00a4c8",
-    "editorGroup.border": "#00a4c8",
-    "editorGroupHeader.tabsBorder": "#bbbbbb"
-  },
-  "workbench.colorCustomizations": {
-    "foreground": "#000000",
-    "editor.lineHighlightBackground": "#F0F05D70"
+    "terminal.border": "#00a4c8",
+    "dropdown.background": "#343534",
+    "menu.background": "#343534",
+    "minimap.background": "#343534"
   },
   "tokenColors": [
     {
@@ -41,14 +83,46 @@
       }
     },
     {
-      "name": "Makefile text",
-      "scope": ["source.makefile", "meta.scope.recipe.makefile"],
+      "name": "Makefile and Markdown Text",
+      "scope": [
+        "source.makefile",
+        "meta.scope.recipe.makefile",
+        "fenced_code.block.language.markdown"
+      ],
       "settings": {
-        "foreground": "#EEFFFF"
+        "foreground": "#F7ECB5"
       }
     },
     {
-      "name": "Makefile Func",
+      "name": "Markdown Bold and Italic",
+      "scope": ["markup.bold.markdown", "markup.italic.markdown"],
+      "settings": {
+        "foreground": "#91DACD"
+      }
+    },
+    {
+      "name": "Markdown Quote",
+      "scope": ["markup.quote.markdown"],
+      "settings": {
+        "foreground": "#fc4c87dc"
+      }
+    },
+    {
+      "name": "Markdown Bold and Italic",
+      "scope": ["markup.bold.markdown", "markup.italic.markdown"],
+      "settings": {
+        "foreground": "#91DACD"
+      }
+    },
+    {
+      "name": "Markdown Shellscript",
+      "scope": ["meta.embedded.block.shellscript"],
+      "settings": {
+        "foreground": "#91DACD"
+      }
+    },
+    {
+      "name": "Makefile Func, Markdown Markup",
       "scope": [
         "entity.name.function.target.makefile",
         "meta.scope.target.makefile",
@@ -63,10 +137,13 @@
       "scope": [
         "variable",
         "string constant.other.placeholder",
-        "variable.other.constant"
+        "variable.other.constant",
+        "variable.parameter",
+        "meta.block variable.other",
+        "support.variable.property"
       ],
       "settings": {
-        "foreground": "#EEFFFF"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -85,29 +162,40 @@
     },
     {
       "name": "Keyword, Storage",
-      "scope": ["keyword", "storage.type", "storage.modifier"],
+      "scope": ["storage.type", "storage.modifier"],
       "settings": {
-        "foreground": ""
+        "fontStyle": "bold",
+        "foreground": "#fc4c87"
+      }
+    },
+    {
+      "name": "Keywords",
+      "scope": [
+        "keyword.control",
+        "storage.modifier",
+        "constant.other.color",
+        "punctuation",
+        "meta.tag",
+        "keyword.other.template",
+        "keyword.other.substitution",
+        "keyword.operator.assignment.tsx",
+        "keyword.operator.comparison.tsx"
+      ],
+      "settings": {
+        "foreground": "#25b1f3"
       }
     },
     {
       "name": "Operator, Misc",
       "scope": [
-        "keyword.control",
-        "constant.other.color",
-        "punctuation",
-        "meta.tag",
         "punctuation.definition.tag",
-        "punctuation.separator.inheritance.php",
         "punctuation.definition.tag.html",
         "punctuation.definition.tag.begin.html",
         "punctuation.definition.tag.end.html",
-        "punctuation.section.embedded",
-        "keyword.other.template",
-        "keyword.other.substitution"
+        "punctuation.section.embedded"
       ],
       "settings": {
-        "foreground": "#41c4e0"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -118,7 +206,7 @@
         "markup.deleted.git_gutter"
       ],
       "settings": {
-        "foreground": "#00a4c8"
+        "foreground": "#fc4c87"
       }
     },
     {
@@ -131,47 +219,49 @@
         "keyword.other.special-method"
       ],
       "settings": {
-        "foreground": "#59d1eb"
-      }
-    },
-    {
-      "name": "Variable parameters",
-      "scope": ["variable.parameter"],
-      "settings": {
-        "foreground": "#EEFFFF"
-      }
-    },
-    {
-      "name": "Block Level Variables",
-      "scope": ["meta.block variable.other"],
-      "settings": {
-        "foreground": "#EEFFFF"
+        "fontStyle": "",
+        "foreground": "#49cce9"
       }
     },
     {
       "name": "Other Variable, String Link",
-      "scope": ["support.other.variable", "string.other.link"],
+      "scope": [
+        "support.other.variable",
+        "string.other.link",
+        "variable.other.object"
+      ],
       "settings": {
-        "foreground": "#f07178"
+        "foreground": "#c4cde4"
+      }
+    },
+    {
+      "name": "True, False",
+      "scope": "constant.language",
+      "settings": {
+        "foreground": "#F7ECB5"
       }
     },
     {
       "name": "Number, Constant,Tag Attribute, Embedded",
       "scope": [
         "constant.numeric",
-        "constant.language",
-        "support.constant",
         "constant.character",
         "constant.escape",
-        "keyword.other.unit",
         "keyword.other"
       ],
       "settings": {
-        "foreground": "#f07178"
+        "foreground": "#8DEC95"
       }
     },
     {
-      "name": "String, Symbols, Inherited Class, Markup Heading",
+      "name": "Unit",
+      "scope": ["keyword.other.unit", "support.constant"],
+      "settings": {
+        "foreground": "#EC9CD2"
+      }
+    },
+    {
+      "name": "String, Symbols, Inherited Class, Markup Heading, Other Object Property",
       "scope": [
         "string",
         "constant.other.symbol",
@@ -179,47 +269,27 @@
         "entity.other.inherited-class",
         "markup.heading",
         "markup.inserted.git_gutter",
-        "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+        "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
+        "variable.other.object.property.tsx",
+        "variable.other.object.property.jsx",
+        "variable.other.object.property.ts",
+        "variable.other.object.property.js"
       ],
       "settings": {
         "foreground": "#91DACD"
       }
     },
     {
-      "name": "Object Literal and Binding Patterns",
+      "name": "Object Property, Literal and Binding Patterns",
       "scope": [
         "meta.object-literal.key",
-        "meta.object-binding-pattern-variable"
+        "meta.object-binding-pattern-variable",
+        "variable.other.object.property",
+        "variable.other.property.tsx",
+        "variable.other.property.ts",
+        "variable.other.property.jsx",
+        "variable.other.property.js"
       ],
-      "settings": {
-        "foreground": "#EEFFFF"
-      }
-    },
-    {
-      "name": "String, Symbols, Inherited Class, Markup Heading",
-      "scope": [
-        "string",
-        "constant.other.symbol",
-        "constant.other.key",
-        "entity.other.inherited-class",
-        "markup.heading",
-        "markup.inserted.git_gutter",
-        "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
-      ],
-      "settings": {
-        "foreground": "#91DACD"
-      }
-    },
-    {
-      "name": "Object Property",
-      "scope": ["variable.other.object.property"],
-      "settings": {
-        "foreground": "#F7ECB5"
-      }
-    },
-    {
-      "name": "Type",
-      "scope": "support.type",
       "settings": {
         "foreground": "#F7ECB5"
       }
@@ -237,6 +307,14 @@
       }
     },
     {
+      "name": "Entity and Primitive Types",
+      "scope": ["entity.name", "support.type.primitive.tsx"],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#F7ECB5"
+      }
+    },
+    {
       "name": "CSS Class and Support",
       "scope": [
         "source.css support.type.property-name",
@@ -247,7 +325,7 @@
         "source.postcss support.type.property-name"
       ],
       "settings": {
-        "foreground": "#B2CCD6"
+        "foreground": "#7FDBCA"
       }
     },
     {
@@ -255,7 +333,8 @@
       "scope": [
         "entity.name.module.js",
         "variable.import.parameter.js",
-        "variable.other.class.js"
+        "variable.other.class.js",
+        "meta.export.default.tsx"
       ],
       "settings": {
         "foreground": "#FF5370"
@@ -265,20 +344,20 @@
       "name": "Language methods",
       "scope": ["variable.language"],
       "settings": {
-        "fontStyle": "italic",
-        "foreground": "#FF5370"
+        // "fontStyle": "italic",
+        "foreground": "#7FDBCA"
       }
     },
     {
       "name": "entity.name.method.js",
-      "scope": ["entity.name.method.js"],
+      "scope": ["entity.name.method.js", "meta.tag"],
       "settings": {
-        "fontStyle": "italic",
-        "foreground": "#82AAFF"
+        // "fontStyle": "italic",
+        "foreground": "#82aaff"
       }
     },
     {
-      "name": "meta.method.js",
+      "name": "Method Constructor",
       "scope": [
         "meta.class-method.js entity.name.function.js",
         "variable.function.constructor"
@@ -309,7 +388,7 @@
       "name": "CSS Classes",
       "scope": ["entity.other.attribute-name.class"],
       "settings": {
-        "foreground": "#FFCB6B"
+        "foreground": "#F7ECB5"
       }
     },
     {
@@ -388,7 +467,7 @@
         "source.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#91DACD"
+        "foreground": "#F7ECB5"
       }
     },
     {
@@ -415,7 +494,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#FF5370"
+        "foreground": "#e06e94"
       }
     },
     {
