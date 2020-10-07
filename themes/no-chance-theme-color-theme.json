@@ -76,9 +76,9 @@
     },
     {
       "name": "String Quotes",
-      "scope": ["comment", "punctuation.definition.comment"],
+      "scope": ["punctuation"],
       "settings": {
-        "foreground": "#546E7A"
+        "foreground": "#BAB5F7"
       }
     },
     {
@@ -132,22 +132,15 @@
       }
     },
     {
-      "name": "Variables",
+      "name": "Variables and Colors",
       "scope": [
         "variable",
         "string constant.other.placeholder",
         "variable.other.constant",
-        "variable.parameter",
         "meta.block variable.other",
-        "support.variable.property"
+        "support.variable.property",
+        "constant.other.color"
       ],
-      "settings": {
-        "foreground": "#FFFFFF"
-      }
-    },
-    {
-      "name": "Colors",
-      "scope": ["constant.other.color"],
       "settings": {
         "foreground": "#ffffff"
       }
@@ -160,10 +153,19 @@
       }
     },
     {
-      "name": "Keyword, Storage",
-      "scope": ["storage.type", "storage.modifier"],
+      "name": "Keyword Storage, JSX tag and Sub-methods",
+      "scope": [
+        "storage.type",
+        "storage.modifier",
+        "entity.name.tag",
+        "entity.name.module.js",
+        "variable.import.parameter.js",
+        "variable.other.class.js",
+        "meta.export.default.tsx",
+        "storage.modifier"
+      ],
       "settings": {
-        "fontStyle": "bold",
+        "fontStyle": "",
         "foreground": "#fc4c87"
       }
     },
@@ -171,14 +173,13 @@
       "name": "Keywords",
       "scope": [
         "keyword.control",
-        "storage.modifier",
         "constant.other.color",
-        "punctuation",
         "meta.tag",
         "keyword.other.template",
         "keyword.other.substitution",
-        "keyword.operator.assignment.tsx",
-        "keyword.operator.comparison.tsx"
+        "keyword.operator.assignment",
+        "keyword.operator.comparison",
+        "keyword.operator.type"
       ],
       "settings": {
         "foreground": "#25b1f3"
@@ -195,17 +196,6 @@
       ],
       "settings": {
         "foreground": "#FFFFFF"
-      }
-    },
-    {
-      "name": "Tag",
-      "scope": [
-        "entity.name.tag",
-        "meta.tag.sgml",
-        "markup.deleted.git_gutter"
-      ],
-      "settings": {
-        "foreground": "#fc4c87"
       }
     },
     {
@@ -227,17 +217,11 @@
       "scope": [
         "support.other.variable",
         "string.other.link",
+        "variable.parameter",
         "variable.other.object"
       ],
       "settings": {
-        "foreground": "#c4cde4"
-      }
-    },
-    {
-      "name": "True, False",
-      "scope": "constant.language",
-      "settings": {
-        "foreground": "#F7ECB5"
+        "foreground": "#EEFFFF"
       }
     },
     {
@@ -246,10 +230,11 @@
         "constant.numeric",
         "constant.character",
         "constant.escape",
-        "keyword.other"
+        "keyword.other",
+        "constant.language.boolean.false"
       ],
       "settings": {
-        "foreground": "#8DEC95"
+        "foreground": "#FF82B4"
       }
     },
     {
@@ -265,14 +250,14 @@
         "string",
         "constant.other.symbol",
         "constant.other.key",
-        "entity.other.inherited-class",
         "markup.heading",
         "markup.inserted.git_gutter",
         "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
-        "variable.other.object.property.tsx",
-        "variable.other.object.property.jsx",
-        "variable.other.object.property.ts",
-        "variable.other.object.property.js"
+        "variable.other.object.property",
+        "variable.other.object.property",
+        "variable.other.object.property",
+        "variable.other.object.property",
+        "constant.language.boolean.true"
       ],
       "settings": {
         "foreground": "#91DACD"
@@ -284,10 +269,7 @@
         "meta.object-literal.key",
         "meta.object-binding-pattern-variable",
         "variable.other.object.property",
-        "variable.other.property.tsx",
-        "variable.other.property.ts",
-        "variable.other.property.jsx",
-        "variable.other.property.js"
+        "variable.other.property"
       ],
       "settings": {
         "foreground": "#F7ECB5"
@@ -296,21 +278,41 @@
     {
       "name": "Class, Support",
       "scope": [
-        "entity.name",
+        "meta.var.expr",
+        "meta.field.declaration",
         "support.class",
         "markup.changed.git_gutter",
+        "entity.other.inherited-class",
         "support.type.sys-types"
       ],
       "settings": {
-        "foreground": "#7FDBCA"
+        "foreground": "#83f0cc"
+      }
+    },
+    {
+      "name": "Type Parameters",
+      "scope": ["meta.type.parameters"],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#D5BDFF"
       }
     },
     {
       "name": "Entity and Primitive Types",
-      "scope": ["entity.name", "support.type.primitive.tsx"],
+      "scope": ["support.type.primitive"],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#F7ECB5"
+        "foreground": "#bab5f7"
+      }
+    },
+    {
+      "name": "Type and Interface",
+      "scope": [
+        "entity.name.type.interface",
+        "entity.other.inherited-class",
+      ],
+      "settings": {
+        "foreground": "#EEFFFF"
       }
     },
     {
@@ -328,22 +330,9 @@
       }
     },
     {
-      "name": "Sub-methods",
-      "scope": [
-        "entity.name.module.js",
-        "variable.import.parameter.js",
-        "variable.other.class.js",
-        "meta.export.default.tsx"
-      ],
-      "settings": {
-        "foreground": "#FF5370"
-      }
-    },
-    {
       "name": "Language methods",
       "scope": ["variable.language"],
       "settings": {
-        // "fontStyle": "italic",
         "foreground": "#7FDBCA"
       }
     },
@@ -351,7 +340,6 @@
       "name": "entity.name.method.js",
       "scope": ["entity.name.method.js", "meta.tag"],
       "settings": {
-        // "fontStyle": "italic",
         "foreground": "#82aaff"
       }
     },
@@ -466,7 +454,7 @@
         "source.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#F7ECB5"
+        "foreground": "#52E7E1"
       }
     },
     {
@@ -475,7 +463,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#F7ECB5"
       }
     },
     {
