@@ -163,6 +163,7 @@
         "variable.import.parameter.js",
         "variable.other.class.js",
         "meta.export.default.tsx",
+        "keyword.operator.expression.instanceof",
         "storage.modifier"
       ],
       "settings": {
