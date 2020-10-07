@@ -34,9 +34,9 @@
     "button.foreground": "#EEFFFF",
     "button.hoverBackground": "#196292",
 
-    "list.dropBackground": "#00a4c8",
-    "list.activeSelectionBackground": "#00a3c8b0",
-    "list.focusBackground": "#00a3c8b0",
+    "list.dropBackground": "#00a3c81f",
+    "list.activeSelectionBackground": "#00a3c85e",
+    "list.focusBackground": "#00a3c8",
     "list.hoverBackground": "#00a3c827",
 
     "panel.border": "#00a3c827",
