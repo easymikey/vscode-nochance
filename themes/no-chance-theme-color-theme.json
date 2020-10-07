@@ -25,7 +25,8 @@
     "sideBarTitle.foreground": "#bbbbbb",
     "sideBarSectionHeader.foreground": "#00a4c8",
     "statusBar.debuggingBackground": "#3d7e6d",
-    "statusBar.background": "#00a4c8",
+    "statusBar.background": "#00a3c869",
+    "statusBar.noFolderBackground": "#343534",
     "sideBarSectionHeader.border": "#00a4c8",
     "sideBar.border": "#00a3c827",
 
