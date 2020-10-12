@@ -6,19 +6,19 @@ In most cases programers use dark theme for your daily needs. There's only a dar
 
 **Dark  React**
 
-![React](images/no-chance-theme-react.png)
+![React Theme](images/no-chance-theme-react.png)
 
 **Dart Typescript**
 
-![Typescript](images/no-chance-theme-typescript.png)
+![Typescript Theme](images/no-chance-theme-typescript.png)
 
 **Dark  HTML**
 
-![HTML](images/no-chance-theme-html.png)
+![HTML Theme](images/no-chance-theme-html.png)
 
 **Dark  CSS**
 
-![CSS](images/no-chance-theme-css.png)
+![CSS Theme](images/no-chance-theme-css.png)
 
 
 ## Installation
