@@ -87,7 +87,7 @@
       "scope": [
         "keyword.package.go",
         "keyword.import.go",
-        "keyword.function.go",
+        "keyword.function.go"
       ],
       "settings": {
         "foreground": "#fc4c87dc"
@@ -95,10 +95,7 @@
     },
     {
       "name": "Go packages",
-      "scope": [
-        "source.go",
-        "entity.name.package.go",
-      ],
+      "scope": ["source.go", "entity.name.package.go"],
       "settings": {
         "foreground": "#F7ECB5"
       }
