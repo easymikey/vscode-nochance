@@ -83,6 +83,27 @@
       }
     },
     {
+      "name": "Go Keyword",
+      "scope": [
+        "keyword.package.go",
+        "keyword.import.go",
+        "keyword.function.go",
+      ],
+      "settings": {
+        "foreground": "#fc4c87dc"
+      }
+    },
+    {
+      "name": "Go packages",
+      "scope": [
+        "source.go",
+        "entity.name.package.go",
+      ],
+      "settings": {
+        "foreground": "#F7ECB5"
+      }
+    },
+    {
       "name": "Makefile and Markdown Text",
       "scope": [
         "source.makefile",
@@ -311,7 +332,7 @@
       "name": "Type and Interface",
       "scope": [
         "entity.name.type.interface",
-        "entity.other.inherited-class",
+        "entity.other.inherited-class"
       ],
       "settings": {
         "foreground": "#EEFFFF"
