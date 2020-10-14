@@ -1,4 +1,4 @@
-MIT LicenseI
+MIT License
 
 Copyright (c) Mikhal Avdeev avdeev2033@icloud.com
 
