@@ -5,20 +5,16 @@ This is color theme extension for Vscode that add new dart palette to your IDE.
 In most cases programers use dark theme for your daily needs. There's only a dark theme now. But in the next updates, it's planned to add a bright theme.
 
 **Dark  React**
-
-![React Theme](images/no-chance-theme-react.png)
+![React](images/no-chance-theme-react.png)
 
 **Dart Typescript**
-
-![Typescript Theme](images/no-chance-theme-typescript.png)
+![Typescript](images/no-chance-theme-typescript.png)
 
 **Dark  HTML**
-
-![HTML Theme](images/no-chance-theme-html.png)
+![HTML](images/no-chance-theme-html.png)
 
 **Dark  CSS**
-
-![CSS Theme](images/no-chance-theme-css.png)
+![CSS](images/no-chance-theme-css.png)
 
 
 ## Installation
