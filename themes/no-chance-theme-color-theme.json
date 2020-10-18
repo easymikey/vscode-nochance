@@ -182,7 +182,8 @@
         "variable.other.class.js",
         "meta.export.default.tsx",
         "keyword.operator.expression.instanceof",
-        "storage.modifier"
+        "storage.modifier",
+        "keyword.operator.expression.typeof"
       ],
       "settings": {
         "fontStyle": "",
