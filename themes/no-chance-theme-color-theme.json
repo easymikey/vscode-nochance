@@ -77,9 +77,9 @@
     },
     {
       "name": "String Quotes",
-      "scope": ["punctuation"],
+      "scope": ["punctuation", "meta.var.expr"],
       "settings": {
-        "foreground": "#BAB5F7"
+        "foreground": "#49CCE9"
       }
     },
     {
@@ -157,7 +157,6 @@
         "string constant.other.placeholder",
         "variable.other.constant",
         "meta.block variable.other",
-        "support.variable.property",
         "constant.other.color"
       ],
       "settings": {
@@ -186,7 +185,6 @@
         "keyword.operator.expression.typeof"
       ],
       "settings": {
-        "fontStyle": "",
         "foreground": "#fc4c87"
       }
     },
@@ -229,7 +227,6 @@
         "keyword.other.special-method"
       ],
       "settings": {
-        "fontStyle": "",
         "foreground": "#49cce9"
       }
     },
@@ -246,13 +243,21 @@
       }
     },
     {
-      "name": "Number, Constant,Tag Attribute, Embedded",
+      "name": "Number, Constant, Tag Attribute, Embedded",
       "scope": [
         "constant.numeric",
         "constant.character",
         "constant.escape",
         "keyword.other",
-        "constant.language.boolean.false"
+        "constant.language.boolean.false",
+        "constant.language.null.js.jsx",
+        "constant.language.null.js",
+        "constant.language.null.tsx",
+        "constant.language.null.ts",
+        "constant.language.undefined.tsx",
+        "constant.language.undefined.ts",
+        "constant.language.undefined.js.jsx",
+        "constant.language.undefined.js"
       ],
       "settings": {
         "foreground": "#FF82B4"
@@ -290,7 +295,7 @@
         "meta.object-literal.key",
         "meta.object-binding-pattern-variable",
         "variable.other.object.property",
-        "variable.other.property"
+        "variable.other.property",
       ],
       "settings": {
         "foreground": "#F7ECB5"
@@ -299,7 +304,6 @@
     {
       "name": "Class, Support",
       "scope": [
-        "meta.var.expr",
         "meta.field.declaration",
         "support.class",
         "markup.changed.git_gutter",
@@ -311,29 +315,22 @@
       }
     },
     {
-      "name": "Type Parameters",
-      "scope": ["meta.type.parameters"],
-      "settings": {
-        "fontStyle": "",
-        "foreground": "#D5BDFF"
-      }
-    },
-    {
-      "name": "Entity and Primitive Types",
-      "scope": ["support.type.primitive"],
-      "settings": {
-        "fontStyle": "bold",
-        "foreground": "#bab5f7"
-      }
-    },
-    {
-      "name": "Type and Interface",
+      "name": "Type Parameters, Aliases and Interfaces",
       "scope": [
+        "meta.type.parameters",
+        "meta.type.declaration.ts",
         "entity.name.type.interface",
         "entity.other.inherited-class"
       ],
       "settings": {
-        "foreground": "#EEFFFF"
+        "foreground": "#ffffff"
+      }
+    },
+    {
+      "name": "Entity and Primitive Types",
+      "scope": ["support.type.primitive", "support.variable.property"],
+      "settings": {
+        "foreground": "#bab5f7"
       }
     },
     {
@@ -628,9 +625,7 @@
     },
     {
       "name": "Markdown - Blockquote",
-      "scope": [
-        "markup.quote punctuation.definition.blockquote.markdown"
-      ],
+      "scope": ["markup.quote punctuation.definition.blockquote.markdown"],
       "settings": {
         "foreground": "#65737E"
       }
