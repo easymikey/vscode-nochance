@@ -221,6 +221,7 @@
         "support.function",
         "keyword.other.special-method",
         "meta.type.annotation",
+        "meta.type.declaration",
         "meta.return.type",
         "meta.var-single-variable"
       ],
